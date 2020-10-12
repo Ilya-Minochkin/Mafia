@@ -6,6 +6,9 @@ using System.IO;
 
 namespace DataLayer
 {
+    /// <summary>
+    /// For Migrations
+    /// </summary>
     public class MafiaDbContextFactory : IDesignTimeDbContextFactory<MafiaDbContext>
     {
         public MafiaDbContext CreateDbContext(string[] args)

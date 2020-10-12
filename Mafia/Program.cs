@@ -13,7 +13,9 @@ namespace Mafia
     {
         public static void Main(string[] args)
         {
+            new DataLayer.MafiaDbContextFactory().CreateDbContext(args);
             CreateHostBuilder(args).Build().Run();
+            
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
