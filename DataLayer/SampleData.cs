@@ -17,22 +17,23 @@ namespace DataLayer
                 context.Players.Add(new Player() {Name = "Максим", NickName = "SexKamaz"});
                 context.Players.Add(new Player() { Name = "Александр", NickName = "Sowajkee" });
 
-                context.SaveChanges();
+                //context.SaveChanges();
 
             
 
-                context.Games.Add(new Game() {Date = new DateTime(2020, 1, 1), NumberOfPlayer = 2, Id = 100});
+                context.Games.Add(new Game() {Date = new DateTime(2020, 1, 1), NumberOfPlayer = 2});
 
                 context.SaveChanges();
 
-                context.GameRecords.Add(new GameRecord() {Game = context.Games.First(), GameId = 100, Player = context.Players.First()});
-                context.GameRecords.Add(new GameRecord() { Game = context.Games.First(), GameId = 100, Player = context.Players.Last()});
+                context.GameRecords.Add(new GameRecord() { Game = context.Games.First(), Player = context.Players.First(), GameId = context.Games.First().Id });
+                context.GameRecords.Add(new GameRecord() { Game = context.Games.First(), Player = context.Players.Find(2), GameId = context.Games.First().Id });
 
-                context.SaveChanges();
+                //context.SaveChanges();
 
                 context.PlayerRecords.Add(new PlayerRecord()
                 {
-                    Date = context.Games.First().Date, Player = context.Players.First(), Result = 1,
+                    Date = context.Games.First().Date, Player = context.Players.First(), 
+                    Result = 1,
                     Role = (int) RolesEnum.Role.Mafia,
                     PlayerId = context.Players.First().Id
                 });
@@ -40,11 +41,14 @@ namespace DataLayer
                 context.PlayerRecords.Add(new PlayerRecord()
                 {
                     Date = context.Games.First().Date,
-                    Player = context.Players.Last(),
+                    Player = context.Players.Find(2),
                     Result = 0,
                     Role = (int)RolesEnum.Role.Innocent,
-                    PlayerId = context.Players.Last().Id
+                    PlayerId = 2
                 });
+
+                context.SaveChanges();
+
             }
         }
     }

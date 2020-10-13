@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataLayer;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -13,8 +14,9 @@ namespace Mafia
     {
         public static void Main(string[] args)
         {
-            new DataLayer.MafiaDbContextFactory().CreateDbContext(args);
-            CreateHostBuilder(args).Build().Run();
+            var factory = new MafiaDbContextFactory();
+            SampleData.InitData(factory.CreateDbContext(args));
+            //CreateHostBuilder(args).Build().Run();
             
         }
 
