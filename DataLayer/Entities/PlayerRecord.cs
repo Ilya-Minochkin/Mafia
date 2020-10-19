@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DataLayer.Enums;
 
 namespace DataLayer.Entities
 {
@@ -10,7 +11,7 @@ namespace DataLayer.Entities
         public int PlayerId { get; set; }
         public Player Player { get; set; }
         public DateTime Date { get; set; }
-        public int Role { get; set; }
+        public RolesEnum.Role Role { get; set; }
         public int Result { get; set; }
 
     }

@@ -34,7 +34,7 @@ namespace DataLayer
                 {
                     Date = context.Games.First().Date, Player = context.Players.First(), 
                     Result = 1,
-                    Role = (int) RolesEnum.Role.Mafia,
+                    Role = RolesEnum.Role.Mafia,
                     PlayerId = context.Players.First().Id
                 });
 
@@ -43,7 +43,7 @@ namespace DataLayer
                     Date = context.Games.First().Date,
                     Player = context.Players.Find(2),
                     Result = 0,
-                    Role = (int)RolesEnum.Role.Innocent,
+                    Role = RolesEnum.Role.Innocent,
                     PlayerId = 2
                 });
 
