@@ -4,6 +4,62 @@
     "F:\\DEV\\Mafia\\Mafia\\Mafia\\Mafia.csproj": {}
   },
   "projects": {
+    "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
+        "outputPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -99,6 +155,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj"
+              },
               "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
                 "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
               }
