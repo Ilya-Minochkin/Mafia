@@ -14,23 +14,32 @@ namespace Mafia.Controllers
     public class HomeController : Controller
     {
         private MafiaDbContext context;
-        private IPlayerRepository playerRepo;
+        //private IPlayerRepository playerRepo;
         private readonly ILogger<HomeController> logger;
 
-        public HomeController(ILogger<HomeController> logger, MafiaDbContext context, IPlayerRepository playerRepo)
+        public HomeController(ILogger<HomeController> logger, MafiaDbContext context/*, IPlayerRepository playerRepo*/)
         {
             this.logger = logger;
             this.context = context;
-            this.playerRepo = playerRepo;
+            //this.playerRepo = playerRepo;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var players = context.Players.ToList(); 
+            return View(players);
         }
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult Player(int playerId)
+        {
+            var player = context.Players.Find(playerId);
+            if (player != null)
+                return View(player);
             return View();
         }
 

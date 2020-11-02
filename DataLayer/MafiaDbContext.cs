@@ -11,6 +11,8 @@ namespace DataLayer
         public DbSet<Player> Players { get; set; }
         public DbSet<PlayerRecord> PlayerRecords { get; set; }
 
+
+
         public MafiaDbContext (DbContextOptions options): base(options) { }
     }
 }

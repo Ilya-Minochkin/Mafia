@@ -5860,19 +5860,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ilya\\.nuget\\packages\\": {}
+    "C:\\Users\\ilya.minochkin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj",
-      "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
-      "outputPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\obj\\",
+      "projectPath": "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj",
+      "packagesPath": "C:\\Users\\ilya.minochkin\\.nuget\\packages\\",
+      "outputPath": "C:\\DEV\\Mafia\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ilya.minochkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5930,7 +5930,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

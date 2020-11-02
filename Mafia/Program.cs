@@ -15,9 +15,10 @@ namespace Mafia
         public static void Main(string[] args)
         {
             var factory = new MafiaDbContextFactory();
-            SampleData.InitData(factory.CreateDbContext(args));
-            //CreateHostBuilder(args).Build().Run();
-            
+            var context = factory.CreateDbContext(args);
+            SampleData.InitData(context);
+            CreateHostBuilder(args).Build().Run();
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

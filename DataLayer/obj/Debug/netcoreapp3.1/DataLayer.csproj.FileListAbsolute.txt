@@ -10,3 +10,15 @@ F:\DEV\Mafia\Mafia\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.pdb
 F:\DEV\Mafia\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.cache
 F:\DEV\Mafia\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.dll
 F:\DEV\Mafia\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.pdb
+C:\DEV\Mafia\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.deps.json
+C:\DEV\Mafia\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.runtimeconfig.json
+C:\DEV\Mafia\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.runtimeconfig.dev.json
+C:\DEV\Mafia\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.dll
+C:\DEV\Mafia\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.pdb
+C:\DEV\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csprojAssemblyReference.cache
+C:\DEV\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfoInputs.cache
+C:\DEV\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.AssemblyInfo.cs
+C:\DEV\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.cache
+C:\DEV\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.dll
+C:\DEV\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.pdb
+C:\DEV\Mafia\DataLayer\obj\Debug\netcoreapp3.1\DataLayer.genruntimeconfig.cache
