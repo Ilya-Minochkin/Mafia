@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Mafia.Models;
 using BusinessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mafia.Controllers
 {
@@ -26,7 +27,7 @@ namespace Mafia.Controllers
 
         public IActionResult Index()
         {
-            var players = context.Players.ToList(); 
+            var players = context.Players.Include(x => x.PlayerRecords).ToList(); 
             return View(players);
         }
 
@@ -37,7 +38,7 @@ namespace Mafia.Controllers
 
         public IActionResult Player(int playerId)
         {
-            var player = context.Players.Find(playerId);
+            var player = context.Players.Include(x => x.PlayerRecords).AsNoTracking().FirstOrDefault(x => x.Id == playerId);
             if (player != null)
                 return View(player);
             return View();

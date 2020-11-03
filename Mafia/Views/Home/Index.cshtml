@@ -8,9 +8,11 @@
     @{
         foreach (var player in Model)
         {
-            <h1>@(Model.IndexOf(player)+1) @player.NickName</h1>
-                                
+            <h1>@(Model.IndexOf(player) + 1) 
+                <a asp-route-playerId="@player.Id" asp-action="Player">@player.NickName</a>
+            
+            </h1>
         }
     }
-    <p>MafiaUralClub dev 2020</p>
 </div>
+

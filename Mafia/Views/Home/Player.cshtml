@@ -7,4 +7,20 @@
 
 <h1>@Model.Name</h1>
 <h1>@Model.NickName</h1>
+<footer>
+
+    <div class="alert-heading">
+        <h1>Игры @Model.NickName</h1>
+        @{
+            if (Model.PlayerRecords != null)
+            {
+                foreach (var playerRecord in Model.PlayerRecords)
+                {
+                    <h2>@(playerRecord.Date.ToString("D")) @playerRecord.Role @playerRecord.Result</h2>
+                }
+            }
+        }
+    </div>
+</footer>
+
 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\Mafia\\Mafia\\Mafia.csproj": {}
+    "F:\\DEV\\Mafia\\Mafia\\Mafia\\Mafia.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
+    "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\DEV\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\ilya.minochkin\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\Mafia\\BusinessLayer\\obj\\",
+        "projectPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
+        "outputPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ilya.minochkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj"
+              "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -56,21 +56,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj": {
+    "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\ilya.minochkin\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\Mafia\\DataLayer\\obj\\",
+        "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
+        "outputPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ilya.minochkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -128,21 +128,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\DEV\\Mafia\\Mafia\\Mafia.csproj": {
+    "F:\\DEV\\Mafia\\Mafia\\Mafia\\Mafia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\Mafia\\Mafia\\Mafia.csproj",
+        "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\Mafia\\Mafia.csproj",
         "projectName": "Mafia",
-        "projectPath": "C:\\DEV\\Mafia\\Mafia\\Mafia.csproj",
-        "packagesPath": "C:\\Users\\ilya.minochkin\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\Mafia\\Mafia\\obj\\",
+        "projectPath": "F:\\DEV\\Mafia\\Mafia\\Mafia\\Mafia.csproj",
+        "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
+        "outputPath": "F:\\DEV\\Mafia\\Mafia\\Mafia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ilya.minochkin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,11 +155,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\DEV\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\DEV\\Mafia\\BusinessLayer\\BusinessLayer.csproj"
+              "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\DEV\\Mafia\\DataLayer\\DataLayer.csproj"
+              "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -202,7 +202,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
