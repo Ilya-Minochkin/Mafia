@@ -9,6 +9,7 @@ namespace DataLayer.Entities
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public int NumberOfPlayer { get; set; }
+        public List<Record> GameRecords { get; set; }
 
     }
 }

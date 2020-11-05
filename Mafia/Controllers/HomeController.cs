@@ -3,30 +3,31 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessLayer;
 using DataLayer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Mafia.Models;
 using BusinessLayer.Interfaces;
+using DataLayer.Entities;
 
 namespace Mafia.Controllers
 {
     public class HomeController : Controller
     {
-        private MafiaDbContext context;
-        private IPlayerRepository playerRepo;
         private readonly ILogger<HomeController> logger;
+        private DataManager _dataManager;
 
-        public HomeController(ILogger<HomeController> logger, MafiaDbContext context, IPlayerRepository playerRepo)
+        public HomeController(ILogger<HomeController> logger, DataManager dataManager)
         {
             this.logger = logger;
-            this.context = context;
-            this.playerRepo = playerRepo;
+            this._dataManager = dataManager;
         }
 
         public IActionResult Index()
         {
-            return View();
+            List<Player>_players = _dataManager.Players.GetAllPlayers().ToList();
+            return View(_players);
         }
 
         public IActionResult Privacy()

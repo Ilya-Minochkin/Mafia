@@ -9,7 +9,7 @@ namespace DataLayer.Entities
         public int Id { get; set; }
         public string NickName { get; set; }
         public string Name { get; set; }
-        public List<PlayerRecord> PlayerRecords { get; set; }
+        public List<Record> PlayerRecords { get; set; }
 
     }
 }

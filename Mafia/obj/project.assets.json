@@ -1571,6 +1571,19 @@
         "runtime": {
           "bin/placeholder/DataLayer.dll": {}
         }
+      },
+      "PresentationLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DataLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PresentationLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PresentationLayer.dll": {}
+        }
       }
     }
   },
@@ -5851,13 +5864,19 @@
       "type": "project",
       "path": "../DataLayer/DataLayer.csproj",
       "msbuildProject": "../DataLayer/DataLayer.csproj"
+    },
+    "PresentationLayer/1.0.0": {
+      "type": "project",
+      "path": "../PresentationLayer/PresentationLayer.csproj",
+      "msbuildProject": "../PresentationLayer/PresentationLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "BusinessLayer >= 1.0.0",
       "DataLayer >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.Design >= 3.1.8"
+      "Microsoft.EntityFrameworkCore.Design >= 3.1.8",
+      "PresentationLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5891,6 +5910,9 @@
             },
             "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
               "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
+            },
+            "F:\\DEV\\Mafia\\Mafia\\PresentationLayer\\PresentationLayer.csproj": {
+              "projectPath": "F:\\DEV\\Mafia\\Mafia\\PresentationLayer\\PresentationLayer.csproj"
             }
           }
         }
