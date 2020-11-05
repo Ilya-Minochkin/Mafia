@@ -23,7 +23,7 @@ namespace BusinessLayer
             get { return _gameRepository; }
         }
 
-        public IRecordRepository GameRecords
+        public IRecordRepository Records
         {
             get { return _recordRepository; }
         }

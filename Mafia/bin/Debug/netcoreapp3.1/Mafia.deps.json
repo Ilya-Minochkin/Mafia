@@ -1487,6 +1487,7 @@
       },
       "PresentationLayer/1.0.0": {
         "dependencies": {
+          "BusinessLayer": "1.0.0",
           "DataLayer": "1.0.0"
         },
         "runtime": {

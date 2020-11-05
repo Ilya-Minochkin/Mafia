@@ -1576,6 +1576,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "BusinessLayer": "1.0.0",
           "DataLayer": "1.0.0"
         },
         "compile": {

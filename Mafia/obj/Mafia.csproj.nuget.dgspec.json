@@ -228,6 +228,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj"
+              },
               "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
                 "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
               }
