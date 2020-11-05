@@ -37,28 +37,6 @@ namespace DataLayer.Migrations
                     b.ToTable("Games");
                 });
 
-            modelBuilder.Entity("DataLayer.Entities.GameRecord", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("GameId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PlayerId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("GameId");
-
-                    b.HasIndex("PlayerId");
-
-                    b.ToTable("GameRecords");
-                });
-
             modelBuilder.Entity("DataLayer.Entities.Player", b =>
                 {
                     b.Property<int>("Id")
@@ -77,15 +55,15 @@ namespace DataLayer.Migrations
                     b.ToTable("Players");
                 });
 
-            modelBuilder.Entity("DataLayer.Entities.PlayerRecord", b =>
+            modelBuilder.Entity("DataLayer.Entities.Record", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("GameId")
+                        .HasColumnType("int");
 
                     b.Property<int>("PlayerId")
                         .HasColumnType("int");
@@ -98,26 +76,21 @@ namespace DataLayer.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("GameId");
+
                     b.HasIndex("PlayerId");
 
-                    b.ToTable("PlayerRecords");
+                    b.ToTable("Records");
                 });
 
-            modelBuilder.Entity("DataLayer.Entities.GameRecord", b =>
+            modelBuilder.Entity("DataLayer.Entities.Record", b =>
                 {
                     b.HasOne("DataLayer.Entities.Game", "Game")
-                        .WithMany()
+                        .WithMany("GameRecords")
                         .HasForeignKey("GameId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DataLayer.Entities.Player", "Player")
-                        .WithMany()
-                        .HasForeignKey("PlayerId");
-                });
-
-            modelBuilder.Entity("DataLayer.Entities.PlayerRecord", b =>
-                {
                     b.HasOne("DataLayer.Entities.Player", "Player")
                         .WithMany("PlayerRecords")
                         .HasForeignKey("PlayerId")

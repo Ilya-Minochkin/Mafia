@@ -1,9 +1,6 @@
-DELETE FROM [dbo].[GameRecords]
+DELETE FROM [dbo].[Records]
 WHERE Id < 100
-DBCC CHECKIDENT('GameRecords', RESEED, 0)
-DELETE FROM [dbo].[PlayerRecords]
-WHERE Id < 100
-DBCC CHECKIDENT('PlayerRecords', RESEED, 0)
+DBCC CHECKIDENT('Records', RESEED, 0)
 DELETE FROM [dbo].[Players]
 WHERE Id < 100
 DBCC CHECKIDENT('Players', RESEED, 0)

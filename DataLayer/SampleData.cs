@@ -12,7 +12,7 @@ namespace DataLayer
     {
         public static void InitData(MafiaDbContext context)
         {
-            if (EnumerableExtensions.Any(context.Players))
+            if (!EnumerableExtensions.Any(context.Players))
             {
                 context.Players.Add(new Player() {Name = "Максим", NickName = "SexKamaz"});
                 context.Players.Add(new Player() {Name = "Александр", NickName = "Sowajkee"});
