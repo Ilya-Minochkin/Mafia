@@ -1,0 +1,12 @@
+F:\DEV\Mafia\Mafia\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.csprojAssemblyReference.cache
+F:\DEV\Mafia\Mafia\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+F:\DEV\Mafia\Mafia\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+F:\DEV\Mafia\Mafia\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+F:\DEV\Mafia\Mafia\BusinessLayer\bin\Release\netcoreapp3.1\BusinessLayer.deps.json
+F:\DEV\Mafia\Mafia\BusinessLayer\bin\Release\netcoreapp3.1\BusinessLayer.dll
+F:\DEV\Mafia\Mafia\BusinessLayer\bin\Release\netcoreapp3.1\BusinessLayer.pdb
+F:\DEV\Mafia\Mafia\BusinessLayer\bin\Release\netcoreapp3.1\DataLayer.dll
+F:\DEV\Mafia\Mafia\BusinessLayer\bin\Release\netcoreapp3.1\DataLayer.pdb
+F:\DEV\Mafia\Mafia\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.csproj.CopyComplete
+F:\DEV\Mafia\Mafia\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.dll
+F:\DEV\Mafia\Mafia\BusinessLayer\obj\Release\netcoreapp3.1\BusinessLayer.pdb

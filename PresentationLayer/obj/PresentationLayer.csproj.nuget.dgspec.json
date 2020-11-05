@@ -1,0 +1,195 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\DEV\\Mafia\\Mafia\\PresentationLayer\\PresentationLayer.csproj": {}
+  },
+  "projects": {
+    "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
+        "outputPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
+        "outputPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DEV\\Mafia\\Mafia\\PresentationLayer\\PresentationLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DEV\\Mafia\\Mafia\\PresentationLayer\\PresentationLayer.csproj",
+        "projectName": "PresentationLayer",
+        "projectPath": "F:\\DEV\\Mafia\\Mafia\\PresentationLayer\\PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\ilya\\.nuget\\packages\\",
+        "outputPath": "F:\\DEV\\Mafia\\Mafia\\PresentationLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\BusinessLayer\\BusinessLayer.csproj"
+              },
+              "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "F:\\DEV\\Mafia\\Mafia\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

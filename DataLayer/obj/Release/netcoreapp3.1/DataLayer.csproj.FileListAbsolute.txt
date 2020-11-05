@@ -1,0 +1,12 @@
+F:\DEV\Mafia\Mafia\DataLayer\obj\Release\netcoreapp3.1\DataLayer.csprojAssemblyReference.cache
+F:\DEV\Mafia\Mafia\DataLayer\obj\Release\netcoreapp3.1\DataLayer.AssemblyInfoInputs.cache
+F:\DEV\Mafia\Mafia\DataLayer\obj\Release\netcoreapp3.1\DataLayer.AssemblyInfo.cs
+F:\DEV\Mafia\Mafia\DataLayer\obj\Release\netcoreapp3.1\DataLayer.csproj.CoreCompileInputs.cache
+F:\DEV\Mafia\Mafia\DataLayer\bin\Release\netcoreapp3.1\DataLayer.deps.json
+F:\DEV\Mafia\Mafia\DataLayer\bin\Release\netcoreapp3.1\DataLayer.runtimeconfig.json
+F:\DEV\Mafia\Mafia\DataLayer\bin\Release\netcoreapp3.1\DataLayer.runtimeconfig.dev.json
+F:\DEV\Mafia\Mafia\DataLayer\bin\Release\netcoreapp3.1\DataLayer.dll
+F:\DEV\Mafia\Mafia\DataLayer\bin\Release\netcoreapp3.1\DataLayer.pdb
+F:\DEV\Mafia\Mafia\DataLayer\obj\Release\netcoreapp3.1\DataLayer.dll
+F:\DEV\Mafia\Mafia\DataLayer\obj\Release\netcoreapp3.1\DataLayer.pdb
+F:\DEV\Mafia\Mafia\DataLayer\obj\Release\netcoreapp3.1\DataLayer.genruntimeconfig.cache
