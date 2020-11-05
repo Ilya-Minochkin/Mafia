@@ -316,3 +316,4 @@ F:\DEV\Mafia\Mafia\Mafia\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.
 F:\DEV\Mafia\Mafia\Mafia\bin\Debug\netcoreapp3.1\BusinessLayer.dll
 F:\DEV\Mafia\Mafia\Mafia\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
 F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Player.cshtml.g.cs
+F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Razor\Views\Home\PlayerEditor.cshtml.g.cs
