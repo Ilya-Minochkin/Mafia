@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using BusinessLayer.Interfaces;
 using DataLayer;
@@ -11,7 +12,7 @@ namespace BusinessLayer.Implementations
 {
     public class EFRecordRepository : IRecordRepository
     {
-        private MafiaDbContext _context;
+        private readonly MafiaDbContext _context;
 
         public EFRecordRepository(MafiaDbContext context)
         {
@@ -19,7 +20,9 @@ namespace BusinessLayer.Implementations
         }
         public Record GetRecordById(int id)
         {
-            return _context.Records.FirstOrDefault(x => x.Id == id);
+            return _context.Records
+                .Include(x => x.Game)
+                .Include(x => x.Player).FirstOrDefault(x => x.Id == id);
         }
 
         public void SaveRecord(Record record)

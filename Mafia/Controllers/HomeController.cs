@@ -10,23 +10,27 @@ using Microsoft.Extensions.Logging;
 using Mafia.Models;
 using BusinessLayer.Interfaces;
 using DataLayer.Entities;
+using PresentationLayer;
+using PresentationLayer.Models;
 
 namespace Mafia.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> logger;
+        private readonly ILogger<HomeController> _logger;
         private DataManager _dataManager;
+        private ServicesManager _servicesManager;
 
         public HomeController(ILogger<HomeController> logger, DataManager dataManager)
         {
-            this.logger = logger;
-            this._dataManager = dataManager;
+            _logger = logger;
+            _dataManager = dataManager;
+            _servicesManager = new ServicesManager(_dataManager);
         }
 
         public IActionResult Index()
         {
-            List<Player>_players = _dataManager.Players.GetAllPlayers().ToList();
+            List<PlayerViewModel> _players = _servicesManager.Players.GetPlayersList();
             return View(_players);
         }
 

@@ -12,34 +12,37 @@ namespace BusinessLayer.Implementations
     public class EFGameRepository : IGameRepository
 
     {
-        private MafiaDbContext context;
+        private readonly MafiaDbContext _context;
         public EFGameRepository(MafiaDbContext context)
         {
-            this.context = context;
+            this._context = context;
         }
         public IEnumerable<Game> GetAllGames()
         {
-            return context.Games.ToList();
+            return _context.Games.ToList();
         }
 
         public Game GetGameById(int gameId)
         {
-            return context.Games.FirstOrDefault(x => x.Id == gameId);
+            return _context.Games
+                .Include(x => x.GameRecords)
+                .AsNoTracking()
+                .FirstOrDefault(x => x.Id == gameId);
         }
 
         public void SaveGame(Game game)
         {
             if (game.Id == 0)
-                context.Add(game);
+                _context.Add(game);
             else
-                context.Entry(game).State = EntityState.Modified;
-            context.SaveChanges();
+                _context.Entry(game).State = EntityState.Modified;
+            _context.SaveChanges();
         }
 
         public void DeleteGame(Game game)
         {
-            context.Games.Remove(game);
-            context.SaveChanges();
+            _context.Games.Remove(game);
+            _context.SaveChanges();
         }
     }
 }

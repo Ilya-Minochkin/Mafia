@@ -12,10 +12,10 @@ namespace PresentationLayer.Services
         private readonly DataManager _dataManager;
         private readonly RecordServices _recordServices;
 
-        public GameServices(DataManager dataManager, RecordServices recordServices)
+        public GameServices(DataManager dataManager)
         {
             _dataManager = dataManager;
-            _recordServices = recordServices;
+            _recordServices = new RecordServices(dataManager);
         }
 
         public List<GameViewModel> GetGamesList()

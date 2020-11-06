@@ -12,10 +12,10 @@ namespace PresentationLayer.Services
         private DataManager _dataManager;
         private RecordServices _recordServices;
 
-        public PlayerServices(DataManager dataManager, RecordServices recordServices)
+        public PlayerServices(DataManager dataManager)
         {
             _dataManager = dataManager;
-            _recordServices = recordServices;
+            _recordServices = new RecordServices(dataManager);
         }
 
         public List<PlayerViewModel> GetPlayersList()
@@ -24,11 +24,12 @@ namespace PresentationLayer.Services
             var playersList = new List<PlayerViewModel>();
             foreach (var item in players)
             {
-                playersList.Add(new PlayerViewModel());
+                playersList.Add(PlayerDbToViewModel(item.Id));
             }
 
             return playersList;
         }
+
 
         public PlayerViewModel PlayerDbToViewModel(int playerId)
         {

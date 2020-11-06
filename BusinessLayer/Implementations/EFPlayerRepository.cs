@@ -11,35 +11,38 @@ namespace BusinessLayer.Implementations
 {
     public class EFPlayerRepository : IPlayerRepository
     {
-        private MafiaDbContext context;
+        private readonly MafiaDbContext _context;
 
         public EFPlayerRepository(MafiaDbContext context)
         {
-            this.context = context;
+            this._context = context;
         }
         public IEnumerable<Player> GetAllPlayers()
         {
-            return context.Players.ToList();
+            return _context.Players.ToList();
         }
 
         public Player GetPlayerById(int playerId)
         {
-            return context.Players.FirstOrDefault(x => x.Id == playerId);
+            return _context.Players
+                .Include(x => x.PlayerRecords)
+                .AsNoTracking()
+                .FirstOrDefault(x => x.Id == playerId);
         }
 
         public void SavePlayer(Player player)
         {
             if (player.Id == 0)
-                context.Add(player);
+                _context.Add(player);
             else
-                context.Entry(player).State = EntityState.Modified;
-            context.SaveChanges();
+                _context.Entry(player).State = EntityState.Modified;
+            _context.SaveChanges();
         }
 
         public void DeletePlayer(Player player)
         {
-            context.Players.Remove(player);
-            context.SaveChanges();
+            _context.Players.Remove(player);
+            _context.SaveChanges();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    @model List<DataLayer.Entities.Player>
+    @model List<PresentationLayer.Models.PlayerViewModel>
 }
 
 <div class="text-center">
@@ -11,8 +11,8 @@
         {
             foreach (var player in Model)
             {
-                <h1>@player.Name</h1>
-                <h1>@player.NickName</h1>
+                <h1>@player.Player.Name</h1>
+                <h1><a asp-route-playerId="@player.Player.Id" asp-controller="Player" asp-action="Index">@player.Player.NickName</a></h1>
                 <br/>
             }
         }
