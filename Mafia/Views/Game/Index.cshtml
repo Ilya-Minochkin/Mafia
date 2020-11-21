@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @model PresentationLayer.Models.GameViewModel
+}
+
+<div class="align-content-center">
+    <h1>@Model.Game.Id</h1>
+    <h1>@Model.Game.Date.ToLongDateString()</h1>
+</div>
+<div class="alert-danger">
+    @{
+    if (Model.GameRecords != null)
+    {
+        foreach (var record in Model.GameRecords)
+        {
+            <a asp-action="Index" asp-controller="Player" asp-route-playerId="@record.Record.Player.Id">
+                <h1>@record.Record.Player.NickName</h1>
+            </a>
+            <h1>@record.Role</h1>
+            <h1>@record.Result</h1>
+        }
+    }
+    }
+</div>

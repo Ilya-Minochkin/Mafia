@@ -1,5 +1,4 @@
-﻿using System;
-using BusinessLayer.Interfaces;
+﻿using BusinessLayer.Interfaces;
 
 namespace BusinessLayer
 {

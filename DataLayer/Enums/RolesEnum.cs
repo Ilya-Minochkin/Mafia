@@ -14,5 +14,6 @@ namespace DataLayer.Enums
             Sheriff = 3,
             Host = -1
         }
+
     }
 }

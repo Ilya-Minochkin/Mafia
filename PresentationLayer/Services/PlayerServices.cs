@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using BusinessLayer;
+﻿using BusinessLayer;
 using DataLayer.Entities;
 using PresentationLayer.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PresentationLayer.Services
 {
     public class PlayerServices
     {
-        private DataManager _dataManager;
-        private RecordServices _recordServices;
+        private readonly DataManager _dataManager;
+        private readonly RecordServices _recordServices;
 
         public PlayerServices(DataManager dataManager)
         {
@@ -21,13 +20,8 @@ namespace PresentationLayer.Services
         public List<PlayerViewModel> GetPlayersList()
         {
             var players = _dataManager.Players.GetAllPlayers();
-            var playersList = new List<PlayerViewModel>();
-            foreach (var item in players)
-            {
-                playersList.Add(PlayerDbToViewModel(item.Id));
-            }
 
-            return playersList;
+            return players.Select(item => PlayerDbToViewModel(item.Id)).ToList();
         }
 
 
@@ -54,6 +48,45 @@ namespace PresentationLayer.Services
             dbModel.NickName = playerEditModel.NickName;
             _dataManager.Players.SavePlayer(dbModel);
             return PlayerDbToViewModel(dbModel.Id);
+        }
+
+
+        public PlayerEditModel GetPlayerEditModel(int playerId)
+        {
+            PlayerEditModel playerEditModel;
+            if (playerId != 0)
+            {
+                var playerDb = _dataManager.Players.GetPlayerById(playerId);
+                playerEditModel = new PlayerEditModel()
+                {
+                    Id = playerDb.Id,
+                    Name = playerDb.Name,
+                    NickName = playerDb.NickName
+                };
+
+            }
+            else
+            {
+                playerEditModel = CreateNewPlayerEditModel();
+            }
+            return playerEditModel;
+        }
+
+        public void DeletePlayer(PlayerViewModel model)
+        {
+            if (model.Player.Id != 0)
+            {
+                var dbModel = _dataManager.Players.GetPlayerById(model.Player.Id);
+                _dataManager.Players.DeletePlayer(dbModel);
+            }
+        }
+
+        public RecordEditModel AddNewRecord(PlayerViewModel model)
+        {
+            var rec = _recordServices.CreateNewRecordEditModel();
+            rec.PlayerId = model.Player.Id;
+            model.PlayerRecordEditModels.Add(rec);
+            return rec;
         }
 
         public PlayerEditModel CreateNewPlayerEditModel()

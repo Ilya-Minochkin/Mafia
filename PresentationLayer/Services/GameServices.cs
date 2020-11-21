@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using BusinessLayer;
+﻿using BusinessLayer;
 using DataLayer.Entities;
 using PresentationLayer.Models;
+using System.Collections.Generic;
 
 namespace PresentationLayer.Services
 {
@@ -46,15 +44,23 @@ namespace PresentationLayer.Services
 
         public GameEditModel GetGameEditModel(int gameId)
         {
-            var dbModel = _dataManager.Games.GetGameById(gameId);
-            var editModel = new GameEditModel()
+            
+            GameEditModel gameEditModel;
+            if (gameId != 0)
             {
-                Id = dbModel.Id,
-                Date = dbModel.Date,
-                NumberOfPlayer = dbModel.NumberOfPlayer
-            };
-
-            return editModel;
+                var dbModel = _dataManager.Games.GetGameById(gameId);
+                gameEditModel = new GameEditModel()
+                {
+                    Id = dbModel.Id,
+                    Date = dbModel.Date,
+                    NumberOfPlayer = dbModel.NumberOfPlayer
+                };
+            }
+            else
+            {
+                gameEditModel = CreateNewGameEditModel();
+            }
+            return gameEditModel;
         }
 
         public GameViewModel SaveGameEditModelToDb(GameEditModel gameEditModel)
@@ -69,7 +75,7 @@ namespace PresentationLayer.Services
             return GameDbToViewModel(game.Id);
         }
 
-        public GameEditModel GetNewGameEditModel()
+        public GameEditModel CreateNewGameEditModel()
         {
             return new GameEditModel();
         }

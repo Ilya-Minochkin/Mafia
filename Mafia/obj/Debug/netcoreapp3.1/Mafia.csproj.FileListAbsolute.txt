@@ -84,7 +84,9 @@ F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Mafia.csproj.CoreCompileInputs.
 F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Mafia.MvcApplicationPartsAssemblyInfo.cache
 F:\DEV\Mafia\Mafia\Mafia\bin\Debug\netcoreapp3.1\BusinessLayer.dll
 F:\DEV\Mafia\Mafia\Mafia\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
-F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Razor\Views\Home\PlayerEditor.cshtml.g.cs
 F:\DEV\Mafia\Mafia\Mafia\bin\Debug\netcoreapp3.1\PresentationLayer.dll
 F:\DEV\Mafia\Mafia\Mafia\bin\Debug\netcoreapp3.1\PresentationLayer.pdb
 F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Razor\Views\Player\Index.cshtml.g.cs
+F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Razor\Views\Player\PlayerEditor.cshtml.g.cs
+F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Razor\Views\Game\GameList.cshtml.g.cs
+F:\DEV\Mafia\Mafia\Mafia\obj\Debug\netcoreapp3.1\Razor\Views\Game\Index.cshtml.g.cs

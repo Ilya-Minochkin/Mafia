@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using BusinessLayer.Interfaces;
+﻿using BusinessLayer.Interfaces;
 using DataLayer;
 using DataLayer.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace BusinessLayer.Implementations
 {
@@ -22,7 +18,8 @@ namespace BusinessLayer.Implementations
         {
             return _context.Records
                 .Include(x => x.Game)
-                .Include(x => x.Player).FirstOrDefault(x => x.Id == id);
+                .Include(x => x.Player)
+                .FirstOrDefault(x => x.Id == id);
         }
 
         public void SaveRecord(Record record)

@@ -7,6 +7,7 @@ namespace PresentationLayer.Models
     {
         public Player Player { get; set; }
         public List<RecordViewModel> PlayerRecords { get; set; }
+        public List<RecordEditModel> PlayerRecordEditModels { get; set; }
     }
 
     public class PlayerEditModel

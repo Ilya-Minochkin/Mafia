@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using BusinessLayer.Interfaces;
+﻿using BusinessLayer.Interfaces;
 using DataLayer;
 using DataLayer.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace BusinessLayer.Implementations
 {
@@ -22,7 +20,7 @@ namespace BusinessLayer.Implementations
             return _context.Players.ToList();
         }
 
-        public Player GetPlayerById(int playerId)
+        public Player GetPlayerById(int? playerId)
         {
             return _context.Players
                 .Include(x => x.PlayerRecords)

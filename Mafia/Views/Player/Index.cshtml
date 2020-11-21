@@ -4,20 +4,72 @@
 @{
     @model PresentationLayer.Models.PlayerViewModel
 }
-
-<div class="m-md-n5">
+<body>
+    <div>
+        <form method="post" asp-controller="Player" asp-action="DeletePlayer" asp-route-Id="@Model.Player.Id">
+            <input type="submit" class="btn btn-warning" value="Удалить игрока" />
+        </form>
+        <a asp-route-playerId="@Model.Player.Id" asp-controller="Player" asp-action="PlayerEditor">
+            <input type="submit" class="btn btn-outline-success" value="Редактировать игрока"/>
+        </a>
+    </div>
+<div class="align-content-start">
     <h1>@Model.Player.Name</h1>
     <h1>@Model.Player.NickName</h1>
-    
-    @{
-        if (@Model.PlayerRecords != null)
-        {
-            foreach (var playerRecord in @Model.PlayerRecords)
+    <div class="table">
+        <a asp-route-playerId="@Model.Player.Id" asp-controller="Player" asp-action="AddNewRecord">
+            <input type="submit" class="active" value="Добавить игру" />
+        </a>
+        @{
+            if (@Model.PlayerRecords != null)
             {
-                <h3>@playerRecord.Record.Game.Date</h3>
-                <h3>@playerRecord.Record.Result</h3>
-                <h3>@playerRecord.Record.Role</h3>
+                <div class="row">
+                    <div class="col-2">Дата игры</div>
+                    <div class="col-1">Результат</div>
+                    <div class="col-3">Роль</div>
+                </div>
+                foreach (var playerRecord in @Model.PlayerRecords)
+                {
+                    <div class="row">
+                        <div class="col-2">
+                            <a asp-action="Index" asp-controller="Game" asp-route-gameId="@playerRecord.Record.GameId">
+                                @playerRecord.Record.Game.Date.ToLongDateString()
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            @playerRecord.Result
+                        </div>
+                        <div class="col-3">
+                            @playerRecord.Role
+                        </div>
+                    </div>
+                }
+            }
+            if (@Model.PlayerRecordEditModels != null)
+            {
+                <div class="row">
+                    <div class="col-2">Дата игры</div>
+                    <div class="col-1">Результат</div>
+                    <div class="col-3">Роль</div>
+                </div>
+                foreach (var playerRecordEditModel in @Model.PlayerRecordEditModels)
+                {
+                    <div class="row">
+                        <div class="col-2">
+                            @playerRecordEditModel.GameId
+                        </div>
+                        <div class="col-1">
+                            @playerRecordEditModel.Result
+                        </div>
+                        <div class="col-3">
+                            @playerRecordEditModel.Role
+                        </div>
+                    </div>
+                }
             }
         }
-    }
+    </div>
+
+
 </div>
+</body>

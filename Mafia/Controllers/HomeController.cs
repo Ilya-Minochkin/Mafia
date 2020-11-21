@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using BusinessLayer;
-using DataLayer;
+﻿using BusinessLayer;
+using Mafia.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Mafia.Models;
-using BusinessLayer.Interfaces;
-using DataLayer.Entities;
 using PresentationLayer;
 using PresentationLayer.Models;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Mafia.Controllers
 {
