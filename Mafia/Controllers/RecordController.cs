@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessLayer;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer;
 using PresentationLayer.Models;
@@ -11,6 +12,11 @@ namespace Mafia.Controllers
     public class RecordController : Controller
     {
         private readonly ServicesManager _servicesManager;
+
+        public RecordController(DataManager dataManager)
+        {
+            _servicesManager = new ServicesManager(dataManager);
+        }
 
         [HttpGet]
         public IActionResult RecordEditor(int recordId)
